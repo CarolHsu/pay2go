@@ -1,15 +1,15 @@
 production:
-  MerchantID: 12919646
-  HashKey: s5qZL6TMlm0gYQMbJHzU1vWDVYqaYwYr
-  HashIV: CpqowjaRGb8E2VPM
-  Version: 1.2
-  OrderComment: Howo
+  MerchantID:
+  HashKey:
+  HashIV:
+  Version:
+  OrderComment:
   host: "https://api.pay2go.com/MPG/mpg_gateway"
 
 test:
-  MerchantID: 11059404
-  HashKey: P7KrauR3tMreDMx86VZXXtVVDGWGoQ4e
-  HashIV: YOF9iwcLiD0Wqx4w
-  Version: 1.2
-  OrderComment: Howo
+  MerchantID:
+  HashKey:
+  HashIV:
+  Version:
+  OrderComment:
   host: "https://capi.pay2go.com/MPG/mpg_gateway"
