@@ -7,7 +7,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pay2go'
+gem 'ez_pay2go'
 ```
 
 And then execute:
