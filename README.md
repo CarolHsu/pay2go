@@ -1,15 +1,13 @@
-# Pay2go
+# ez_pay2go
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pay2go`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+串接[台灣智付寶](https://www.pay2go.com)的 API 封裝，更多官方文件請見[這裡](https://www.pay2go.com/dw_files/info_api/pay2go_gateway_MPGapi_V1_1_3.pdf)，你會找到更多 API 資訊。
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pay2go'
+gem 'ez_pay2go'
 ```
 
 And then execute:
@@ -20,9 +18,28 @@ Or install it yourself as:
 
     $ gem install pay2go
 
+Then you can run
+
+    $ rails generate pay2go
+
+or
+
+    $ rails g pay2go
+
+to generate the needed config files.
+
 ## Usage
 
-TODO: Write usage instructions here
+First of all, you **must** edit the ```config/pay2go.yml``` for your own secret information.
+
+Create a request
+
+```ruby
+api = Pay2go::Client.new(84, item_desc: "test item description")
+# price = 84 with item description
+
+api.response
+```
 
 ## Development
 
