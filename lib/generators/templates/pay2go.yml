@@ -1,0 +1,15 @@
+production:
+  MerchantID:
+  HashKey:
+  HashIV:
+  Version:
+  OrderComment:
+  host: "https://api.pay2go.com/MPG/mpg_gateway"
+
+test:
+  MerchantID:
+  HashKey:
+  HashIV:
+  Version:
+  OrderComment:
+  host: "https://capi.pay2go.com/MPG/mpg_gateway"
